@@ -1,0 +1,24 @@
+.projects {
+    display: grid;
+    place-items: center;
+}
+
+.projects a {
+    color: var(--white);
+    font-family: Roboto, Sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.project-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img txt";
+    place-items: center;
+}
+
+.projects img {
+    width: 75%;
+    margin: 0.5em;
+}

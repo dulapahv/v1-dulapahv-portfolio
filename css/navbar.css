@@ -1,0 +1,144 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    background: linear-gradient(
+        90deg,
+        var(--pink),
+        var(--darkblue),
+        var(--purple)
+    );
+    font-family: Gotham, Sans-serif;
+    font-weight: 600;
+    border-radius: 10px 10px 10px 10px;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 1.3em;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-animation: navbar-expand 0.4s cubic-bezier(0.17, 0.67, 0.52, 0.96);
+    animation: navbar-expand 0.4s cubic-bezier(0.17, 0.67, 0.52, 0.96);
+}
+
+.navbar div * {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0;
+}
+
+.navbar div a,
+.menu a {
+    text-decoration: none;
+    color: var(--txt-navbar);
+}
+
+.navbar li:hover a,
+.menu li:hover a {
+    color: var(--brown);
+    background-color: var(--yellow);
+    -webkit-animation: fade-in 0.2s forwards, round-in forwards,
+        bounce 0.2s forwards;
+    animation: fade-in 0.2s forwards, round-in forwards, bounce 0.2s forwards;
+}
+
+@media (hover: none) {
+    .navbar div a:hover,
+    .menu li:hover a {
+        color: var(--txt-navbar);
+        background-color: transparent;
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    margin: 0.5rem;
+    background: var(--darkgray);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+
+.mobile.menu {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .mobile * {
+        display: none;
+    }
+}
+
+.navbar .responsive {
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.desktop {
+    opacity: 1;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile img {
+    width: 15.5px;
+    height: 15.5px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+
+.mobile img:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 573px) {
+    .announcement {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar .responsive {
+        position: absolute;
+        width: 98%;
+        pointer-events: none;
+        opacity: 0;
+    }
+    .desktop {
+        display: none;
+        opacity: 0;
+    }
+    .menu li {
+        display: block;
+        padding: 0;
+        float: right;
+        clear: both;
+    }
+    .menu li a {
+        display: inherit;
+        padding: 0.5rem;
+        font-family: Gotham, Sans-serif;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .menu li a::after {
+        content: " |";
+    }
+    .mobile {
+        display: inherit;
+        -webkit-animation: fade-in 0.2s forwards, fly-in 0.1s ease-out;
+        animation: fade-in 0.2s forwards, fly-in 0.1s ease-out;
+    }
+}

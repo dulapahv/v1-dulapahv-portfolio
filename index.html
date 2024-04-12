@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DulapahV's Portfolio</title>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/Icon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/Icon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/Icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./images/Icon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./images/Icon/safari-pinned-tab.svg"
+            color="#854d0e"
+        />
+        <meta name="msapplication-TileColor" content="#854d0e" />
+        <meta
+            name="msapplication-TileImage"
+            content="./images/Icon/mstile-144x144.png"
+        />
+        <meta name="theme-color" content="#854d0e" />
+        <!-- <link rel="preload" href="/css/*.css" as="style"/>
+		<link rel="preload" href="/js/*.js" as="script"/> -->
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <script src="js/main.js" defer></script>
+    </head>
+    <body onload="timeout()" style="margin: 0">
+        <div id="loader"></div>
+
+        <div style="display: none" id="myDiv" class="animate-bottom">
+            <div class="announcement">
+                <p>
+                    ⚠️ This website will undergo a major design and code revamp. Stay tuned! ⚠️
+                </p>
+            </div>
+            <nav class="navbar">
+                <div style="font-weight: 800">
+                    <li>
+                        <a href="https://dulapahv.github.io/">> DulapahV</a>
+                    </li>
+                </div>
+                <div class="responsive">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+                <div class="desktop">
+                    <li><a href="https://github.com/DulapahV">My Github</a></li>
+                </div>
+                <div class="mobile" onclick="showMenu()">
+                    <li><img src="./images/navbar_toggle.png" /></li>
+                </div>
+            </nav>
+            <nav class="mobile menu" id="mobile menu">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/DulapahV">My Github</a></li>
+            </nav>
+            <div class="content-wrapper">
+                <div class="greeting-container">
+                    <img src="./images/profile_pic.png" class="profile-pic" />
+                    <h1>
+                        <span id="rainbow" style="display: contents"
+                            >Greetings!</span
+                        >
+                        I'm Dulapah Vibulsanti
+                    </h1>
+                    <p>
+                        A year 2 student in Software Engineering @
+                        <span
+                            style="color: var(--txt-orange); display: contents"
+                            >KMITL</span
+                        >, Bangkok
+                    </p>
+                    <p>
+                        Cadet @
+                        <span style="color: var(--txt-42); display: contents"
+                            >42Bangkok</span
+                        >
+                    </p>
+                </div>
+                <hr />
+                <div id="about-me" class="about-me">
+                    <h1>About Me</h1>
+                    <p>
+                        A <b>multi-talented individual</b>, a
+                        <b>quick learner</b>, and a
+                        <b>fast-adapting person</b>.<br /><br />
+                        I am experienced in the backend and can also do the
+                        frontend. I am also responsible, and able to cooperate
+                        with other team members.<br /><br />
+                        I am looking to improve my skills and abilities so that
+                        I can grow professionally. I will be an active and
+                        valued member in the organization, being resourceful,
+                        innovative, and flexible.
+                    </p>
+                </div>
+                <hr />
+                <div id="experiences" class="experiences">
+                    <h1>Skills & Experiences</h1>
+                    <h2>💻 Programming 💻</h2>
+                    <h3>< Programming Languages ></h3>
+                    <div class="exp-icon">
+                        <img src="./images/Prog_Lang/py.png" />
+                        <img src="./images/Prog_Lang/c.png" />
+                        <img src="./images/Prog_Lang/c++.png" />
+                        <img src="./images/Prog_Lang/cs.png" />
+                        <img src="./images/Prog_Lang/java.png" />
+                        <img src="./images/Prog_Lang/rust.png" />
+                        <img src="./images/Prog_Lang/html.png" />
+                        <img src="./images/Prog_Lang/css.png" />
+                        <img src="./images/Prog_Lang/js.png" />
+                        <img
+                            src="./images/Prog_Lang/arm.png"
+                            style="width: 70px"
+                        />
+                        <img src="./images/Prog_Lang/swift.png" />
+                    </div>
+                    <h3>< Other Technologies ></h3>
+                    <div class="exp-icon">
+                        <img
+                            src="./images/Other_Tech/firebase.png"
+                            style="width: 38px"
+                        />
+                        <img src="./images/Other_Tech/git.png" />
+                        <img src="./images/Other_Tech/unity.png" />
+                        <img src="./images/Other_Tech/unreal.png" />
+                        <img src="./images/Other_Tech/tailwind.png" />
+                        <img
+                            src="./images/Other_Tech/mysql.png"
+                            style="width: 70px"
+                        />
+                    </div>
+                    <h3>< OS and Hardware ></h3>
+                    <div class="exp-icon">
+                        <img src="/images/OS_Hardware/windows.png" />
+                        <img src="./images/OS_Hardware/linux.png" />
+                        <img
+                            src="./images/OS_Hardware/raspberrypi.png"
+                            style="width: 42px"
+                        />
+                    </div>
+                    <h2 style="margin-top: 50px">💡 Creativity 💡</h2>
+                    <h3>< Media and Design ></h3>
+                    <div class="exp-icon">
+                        <img src="./images/Media_Design/ps.png" />
+                        <img src="./images/Media_Design/ai.png" />
+                        <img src="./images/Media_Design/pr.png" />
+                        <img src="./images/Media_Design/word.png" />
+                        <img src="./images/Media_Design/ppt.png" />
+                        <img src="./images/Media_Design/excel.png" />
+                        <img src="./images/Media_Design/visio.png" />
+                        <img src="./images/Media_Design/audacity.png" />
+                    </div>
+                    <h3>< Virtual Reality and Virtual Character ></h3>
+                    <div class="exp-icon">
+                        <img src="./images/VR_VChar/oculus.png" />
+                        <img src="./images/VR_VChar/vroid.png" />
+                        <img src="./images/VR_VChar/vcast.png" />
+                        <img src="./images/VR_VChar/vtube.png" />
+                        <img src="./images/VR_VChar/vmagic.png" />
+                    </div>
+                    <h2 style="margin-top: 50px">💼 Experiences 💼</h2>
+                    <p>
+                        Official <b>Teaching Assistance</b> of KMITL in Rust
+                        programming language for the KMITL freshmen.<br /><br />Qualified
+                        and currently a <b>cadet at 42Bangkok</b>, a global
+                        computer science school from France.<br /><br /><b
+                            >Initiated and mentored</b
+                        >
+                        KMITL freshmen in Python and C programming language in
+                        the SE14 Pre-Session activity.<br /><br /><b
+                            >Assist in coding</b
+                        >
+                        to friends in KMITL and other universities such as
+                        Chulalongkorn University, Thammasat University, Mahidol
+                        University, Kasetsart University, etc.
+                    </p>
+                </div>
+                <hr />
+                <div id="projects" class="projects">
+                    <h1>Projects</h1>
+                    <h2>MyStudyPlan</h2>
+                    <a href="https://github.com/dulapahv/MyStudyPlan"
+                        >https://github.com/dulapahv/MyStudyPlan</a
+                    >
+                    <p>
+                        MyStudyPlan is an app that enables you to track
+                        all your classes, tasks, assignments and exams -
+                        anywhere!
+                    </p>
+                    <div class="project-img">
+                        <img src="./images/Projects/MyStudyPlan/1.png" />
+                        <img src="./images/Projects/MyStudyPlan/2.png" />
+                        <img src="./images/Projects/MyStudyPlan/3.png" />
+                        <img src="./images/Projects/MyStudyPlan/4.png" />
+                    </div>
+                    <h2>CalcLab</h2>
+                    <a href="https://github.com/DulapahV/CalcLab"
+                        >github.com/DulapahV/CalcLab</a
+                    >
+                    <p>
+                        All-in-one GUI application which includes: Scientific
+                        Calculator, Graph Plotter, Date Comparator, Currency
+                        Converter (real-time exchange rates), 12 More Converter
+                        Tools.
+                    </p>
+                    <div class="project-img">
+                        <img src="./images/Projects/CalcLab/1.png" />
+                        <img src="./images/Projects/CalcLab/2.png" />
+                        <img src="./images/Projects/CalcLab/4.png" />
+                        <img src="./images/Projects/CalcLab/6.png" />
+                    </div>
+                    <h2>Nekoparaiten</h2>
+                    <a href="https://github.com/DulapahV/Nekoparaiten"
+                        >github.com/DulapahV/Nekoparaiten</a
+                    >
+                    <p>
+                        A recreated game based on an anime neko romance
+                        simulation mobile game originally created by Sayori
+                        (NEKO WORKs). This recreated version is an online
+                        speed-clicking game with online account synchronization
+                        with built-in sign-up/login account feature, and online
+                        leaderboard system.
+                    </p>
+                    <div class="project-img">
+                        <img src="./images/Projects/Nekoparaiten/1.png" />
+                        <img src="./images/Projects/Nekoparaiten/2.png" />
+                        <img src="./images/Projects/Nekoparaiten/3.png" />
+                        <img src="./images/Projects/Nekoparaiten/4.png" />
+                    </div>
+                    <h2>Matrix-Arithmetic</h2>
+                    <a href="https://github.com/DulapahV/Matrix-Arithmetic"
+                        >github.com/DulapahV/Matrix-Arithmetic</a
+                    >
+                    <p>
+                        Feature-packed matrix computing program that runs in the
+                        terminal.
+                    </p>
+                    <div class="project-img">
+                        <img src="./images/Projects/Matrix-Arithmetic/1.png" />
+                        <img src="./images/Projects/Matrix-Arithmetic/2.png" />
+                        <img src="./images/Projects/Matrix-Arithmetic/3.png" />
+                        <img src="./images/Projects/Matrix-Arithmetic/4.png" />
+                    </div>
+                    <h2>AceMath</h2>
+                    <a href="https://github.com/DulapahV/AceMath"
+                        >github.com/DulapahV/AceMath</a
+                    >
+                    <p>
+                        An online speed mathematics game. Solve math problems as
+                        fast as you can while also competing with other people
+                        around the world!
+                    </p>
+                    <div class="project-img">
+                        <img src="./images/Projects/AceMath/1.png" />
+                        <img src="./images/Projects/AceMath/2.png" />
+                        <img src="./images/Projects/AceMath/3.png" />
+                        <img src="./images/Projects/AceMath/4.png" />
+                    </div>
+                </div>
+                <hr />
+                <div id="contact" class="contact">
+                    <h1>Contact</h1>
+                    <div class="row">
+                        <div class="column">
+                            <h2>Phone</h2>
+                            <p>+66 81-908-5657</p>
+                        </div>
+                        <div class="column">
+                            <h2>Email</h2>
+                            <p>dulapah6@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <h2>LinkedIn</h2>
+                            <p>
+                                <a href="https://www.linkedin.com/in/dulapahv/"
+                                    >in/dulapahv</a
+                                >
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h2>GitHub</h2>
+                            <p>
+                                <a href="https://github.com/DulapahV"
+                                    >dulapahv</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <script
+                    src="https://platform.linkedin.com/badges/js/profile.js"
+                    async
+                    defer
+                    type="text/javascript"
+                ></script>
+                <div
+                    align="center"
+                    style="margin-top: 50px"
+                    class="badge-base LI-profile-badge"
+                    data-locale="en_US"
+                    data-size="large"
+                    data-theme="dark"
+                    data-type="HORIZONTAL"
+                    data-vanity="dulapahv"
+                    data-version="v1"
+                >
+                    <a
+                        class="badge-base__link LI-simple-link"
+                        href="https://th.linkedin.com/in/dulapahv?trk=profile-badge"
+                    ></a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="https://www.linkedin.com/in/dulapahv/"
+                        >© 2022 Dulapah Vibulsanti</a
+                    >
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

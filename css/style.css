@@ -1,0 +1,99 @@
+@import url("./themes/dark.css") (prefers-color-scheme: dark);
+@import url("./themes/light.css") (prefers-color-scheme: light);
+@import url("./fonts.css");
+@import url("./animation.css");
+@import url("./announcement.css");
+@import url("./navbar.css");
+@import url("./greeting.css");
+@import url("./about-me.css");
+@import url("./experiences.css");
+@import url("./projects.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: var(--darkgray);
+}
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: var(--gray);
+    border-radius: 3px;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -57px 0 0 -57px;
+    border: 16px;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 100%;
+    border-width: 0.5rem;
+    border-top: 8px;
+    border-top-style: solid;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+body,
+html {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--txt);
+    font-family: Gotham, Sans-serif;
+    font-weight: 200;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: var(--h1);
+    font-weight: 800;
+}
+
+h2 {
+    color: var(--yellow);
+    font-family: Roboto, Sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: Roboto, Sans-serif;
+    font-weight: 100;
+    font-size: 1.1em;
+}
+
+hr {
+    height: 3px;
+    border-radius: 8px;
+    border: none;
+    margin: 4rem auto;
+    background: linear-gradient(to right, var(--blue), var(--yellow));
+}
+
+.content-wrapper {
+    margin: min(4%, 2.5rem) min(5%, 8rem);
+    width: min(95%, 80rem);
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}

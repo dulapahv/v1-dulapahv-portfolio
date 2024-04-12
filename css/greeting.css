@@ -1,0 +1,24 @@
+.greeting-container * {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.greeting-container h1 {
+    -webkit-animation: text-wipe 1s ease-out;
+    animation: text-wipe 1s ease-out;
+}
+
+#rainbow {
+    -webkit-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+}
+
+.greeting-container img {
+    margin: 3rem auto;
+    max-width: 20vw;
+    min-width: 200px;
+    border-radius: 100%;
+    border: solid 5px var(--yellow);
+}

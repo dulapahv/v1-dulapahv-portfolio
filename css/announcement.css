@@ -1,0 +1,29 @@
+.announcement {
+    display: inline-block;
+    height: 2rem;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(
+        45deg,
+        var(--yellow),
+        var(--yellow) 25%,
+        var(--darkyellow) 25%,
+        var(--darkyellow) 50%,
+        var(--yellow) 50%,
+        var(--yellow) 75%,
+        var(--darkyellow) 75%,
+        var(--darkyellow)
+    );
+    background-size: 50px 50px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+.announcement p {
+    color: var(--brown);
+    font-family: Gotham, Sans-serif;
+    font-weight: 600;
+    margin-top: 0.4em;
+}

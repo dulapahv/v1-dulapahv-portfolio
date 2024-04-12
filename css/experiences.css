@@ -1,0 +1,24 @@
+.experiences {
+    display: grid;
+    place-items: center;
+}
+
+.experiences .exp-icon {
+    margin-bottom: 10px;
+}
+
+.experiences img {
+    display: inline-block;
+    margin: 0.2rem;
+    width: 50px;
+    top: 50px;
+}
+
+.experiences img:hover {
+    -webkit-animation: zoom-in 0.2s forwards;
+    animation: zoom-in 0.2s forwards;
+}
+
+.experiences b {
+    color: var(--txt-blue);
+}

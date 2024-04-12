@@ -1,0 +1,19 @@
+.contact {
+    display: grid;
+    place-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    column-width: 15rem;
+}
+
+.column a {
+    color: var(--txt-blue);
+}
